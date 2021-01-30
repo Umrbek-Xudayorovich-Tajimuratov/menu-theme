@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper{
+    width: 1000px;
+    margin: 10vh auto;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.services{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+    transition: 0.25s ease-in-out
+}
+.services::before{
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    left: 100%;
+    top: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: 0.25s ease-in-out;
+}
+
+.text{
+    text-align: center;
+    flex: 2;
+    font-size: 0.9rem;
+}
+.theme{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+.picture-code{
+    flex: 1;
+    width: 40%;
+    background-position: center center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    transition: 0.25s ease-in-out;
+}
+.services:hover .picture-code{
+    transform: scale(1.125);
+}
+.services:hover{
+    background-color: #0B6CA9;
+}
+
+
+/* Loader */
+.item-loader, .services:nth-child(1)::before{
+    background-color: #AF7AC5;
+}
+
+.pictureLoader{
+    background-image: url("../images/helmet.png");
+}
+.services:nth-child(1):hover::before{
+    background-color: #0B6CA9;
+}
+
+/* 3d effect*/
+
+.item-3d,.services:nth-child(3)::before{
+    background-color: #48C9B0;
+}
+
+.picture-3d{
+    background-image: url("../images/shape.png");
+}
+.services:nth-child(3):hover::before{
+    background-color:#0B6CA9;
+}
+/* Slider */
+.item-slider,.services:nth-child(2)::before{
+    background-color: #5DADE2;
+}
+
+.pictureSlider{
+    background-image: url("../images/tool.png");
+}
+.services:nth-child(2):hover::before{
+    background-color: #0B6CA9;
+}
+
+/* Table */
+.item-table{
+    background-color: #52BE80;
+}
+
+.picture-table{
+    background-image: url("../images/signs.png");
+}
+
+/* Transition */
+.item-transition, .services:nth-child(5)::before{
+    background-color: #ECC837;
+}
+
+.pictureLoader{
+    background-image: url("../images/helmet.png");
+}
+.services:nth-child(5):hover::before{
+    background-color: #0B6CA9;
+}
+
+
+/* Animation */
+.item-animation,.services:nth-child(6)::before{
+    background-color: #EB984E;
+}
+
+.pictureSlider{
+    background-image: url("../images/tool.png");
+}
+.services:nth-child(6):hover::before{
+    background-color: #0B6CA9;
+}
+
+/* hover effect */
+.item-hover,.services:nth-child(7)::before{
+    background-color:#F06292;
+}
+
+.picture-3d{
+    background-image: url("../images/shape.png");
+}
+.services:nth-child(7):hover::before{
+    background-color:#0B6CA9;
+}
+
+/* Bouncing */
+.item-bounce{
+    background-color: #4DB6AC;
+}
+
+.picture-table{
+    background-image: url("../images/signs.png");
+}
